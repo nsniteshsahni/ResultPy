@@ -9,7 +9,7 @@ Just requires tweepy (python wrapper for Twitter API)
 sudo pip install tweepy
 ```
 Now Just change the 'Date' in code with current date and execute core.py.
-Attach it to your startup process(s) for indefinite exectuion in background whenever the system is running.
+Attach it to your startup process(s) for indefinite execution in background whenever the system is running.
 
 # License
 The MIT License (MIT)
