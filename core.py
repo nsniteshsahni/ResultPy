@@ -1,6 +1,6 @@
 import urllib2
 import time
-import tweepy # Python wrapper for twitter API
+import tweepy
 import os
 
 # API keys decleration starts
@@ -10,11 +10,13 @@ consumer_secret = ''
 access_token = ''
 access_secret = ''
 
-# Decleration ends
-date = 0101 # Date of result decleration
-year = '2016' # Your year of examination
+# declaration ends
+
+date = 0101    # Date of result declaration
+year = '2016'  # Your year of examination
 tweet_string = 'twitter set @nsniteshsahni Result for %s %s declared.'
-url = 'http://www.ipu.ac.in/exam/ExamResults/' + year + '/' + str(date) + year + '/027_CSE_5th%20Sem.pdf'
+result_url = 'http://www.ipu.ac.in/exam/ExamResults/'
+url = result_url + year + '/' + str(date) + year + '/027_CSE_5th%20Sem.pdf'
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_secret)
 t = tweepy.API(auth)
